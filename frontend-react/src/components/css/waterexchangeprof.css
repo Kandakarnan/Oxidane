@@ -1,0 +1,26 @@
+.mintform{
+    position: relative;
+    width:500px;
+    bottom:1080px;
+    right:400px
+    
+}
+
+.pendingtable{
+    position: relative ;
+    bottom:1750px ;
+    left:400px;
+    width:2000px
+}
+
+.tokensale{
+    width:400px;
+    right:800px;
+   
+}
+
+.sale{
+    position: relative ;
+    bottom:1050px;
+    right:50px
+}

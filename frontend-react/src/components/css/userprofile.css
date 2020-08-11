@@ -1,0 +1,43 @@
+.exchangelist{
+    position: relative;
+    bottom:950px;
+    width:850px;
+    left:1030px
+
+}
+.watersaleform{
+    position: relative;
+    bottom:800px;
+    width:500px;
+    left:300px
+}
+
+.deliverystatus{
+    position: relative;
+    bottom:1800px;
+    left:800px;
+    width:70rem
+}
+
+.buytoken{
+    position: relative ;
+    top:50px
+}
+.wallet{
+    position: relative;
+    right:410px;
+    width:300px;
+    top:20px;
+}
+
+.rejectform{
+    position: relative;
+    width:300px;
+    bottom:1950px;
+    right:805px;
+   
+}
+
+.backgroundcol{
+    background-color:#394989;
+}

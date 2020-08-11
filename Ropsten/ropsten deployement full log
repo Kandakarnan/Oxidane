@@ -1,0 +1,227 @@
+
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'ropsten_infura-fork'
+> Network id:      3
+> Block gas limit: 0x7a121d
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        8439728
+   > block timestamp:     1596647838
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.865547346
+   > gas used:            149391
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000298782 ETH
+
+   -------------------------------------
+   > Total cost:         0.000298782 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'OxidaneToken'
+   ------------------------
+   > block number:        8439730
+   > block timestamp:     1596647931
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.862965862
+   > gas used:            1263401
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002526802 ETH
+
+
+   Deploying 'TokenSale'
+   ---------------------
+   > block number:        8439731
+   > block timestamp:     1596647987
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.861451818
+   > gas used:            757022
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001514044 ETH
+
+
+   Deploying 'Kyc'
+   ---------------
+   > block number:        8439733
+   > block timestamp:     1596648014
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.860966322
+   > gas used:            221030
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00044206 ETH
+
+
+   Deploying 'Waterexchange'
+   -------------------------
+   > block number:        8439734
+   > block timestamp:     1596648048
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.858393522
+   > gas used:            1286400
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0025728 ETH
+
+
+   Deploying 'Watersale'
+   ---------------------
+   > block number:        8439735
+   > block timestamp:     1596648093
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.853211204
+   > gas used:            2591159
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005182318 ETH
+
+   -------------------------------------
+   > Total cost:         0.012238024 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.012536806 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten_infura'
+> Network id:      3
+> Block gas limit: 0x7a121d
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x329c6bb533b3ad7fc8754bcdf3c60955129d41d5ab9d511e47d84806efea867d
+   > Blocks: 1            Seconds: 17
+   > contract address:    0x408211e0dB100152f1A8C6F22592d8f9B1A6B7e4
+   > block number:        8439751
+   > block timestamp:     1596648109
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.862558308
+   > gas used:            164391
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328782 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00328782 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'OxidaneToken'
+   ------------------------
+   > transaction hash:    0xa320ff3ef43b8434ec633eaa9fb440a1c533c8b34b328e3db03bb10884b0b88d
+   > Blocks: 0            Seconds: 33
+   > contract address:    0xbB7C535388F19A3D5cC4B1825d31e3FBF9f6c772
+   > block number:        8439753
+   > block timestamp:     1596648150
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.834943468
+   > gas used:            1338401
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02676802 ETH
+
+
+   Deploying 'TokenSale'
+   ---------------------
+   > transaction hash:    0x816719d9053d7a2dd020a411e37e91511c7d06c24c6967c389b9b36e5236021b
+   > Blocks: 0            Seconds: 17
+   > contract address:    0xfce9Bb6A23Ae3095C5Fc74C7E647C5005D11C7FF
+   > block number:        8439754
+   > block timestamp:     1596648192
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.819203028
+   > gas used:            787022
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01574044 ETH
+
+
+   Deploying 'Kyc'
+   ---------------
+   > transaction hash:    0xd0602abfab5d7defda38f7f0392d477f52a63a6ffb86d90609635eb9576d19e9
+   > Blocks: 2            Seconds: 25
+   > contract address:    0xE8F68B8191dA16B392595afF24aF3d86039C236D
+   > block number:        8439761
+   > block timestamp:     1596648275
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.814048068
+   > gas used:            221030
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0044206 ETH
+
+
+   Deploying 'Waterexchange'
+   -------------------------
+   > transaction hash:    0x82823b256bde4874f86ba235a0966cde41c26fa35e2a24800485e020a00322db
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xb3f6b42538f502B75D4d231c5598C91FAC54861d
+   > block number:        8439763
+   > block timestamp:     1596648295
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.787720068
+   > gas used:            1316400
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.026328 ETH
+
+
+   Deploying 'Watersale'
+   ---------------------
+   > transaction hash:    0x3a8bc597b75d6e5aec5577c6c0d888bfd36662223704875f17a5e0ccd3bcff59
+   > Blocks: 2            Seconds: 37
+   > contract address:    0x2c5083f0b47f7D3CAfE95eE03E1A8d623c16AF4e
+   > block number:        8439765
+   > block timestamp:     1596648350
+   > account:             0xD5bAec36D6d67E40c0aB4d403b8E4A697D7C5C4E
+   > balance:             3.735296888
+   > gas used:            2621159
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05242318 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.12568024 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.12896806 ETH
+
+
+
+Etherscan deployement link:https://ropsten.etherscan.io/address/0xd5baec36d6d67e40c0ab4d403b8e4a697d7c5c4e

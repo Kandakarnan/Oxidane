@@ -1,0 +1,1432 @@
+{
+  "contractName": "Kyc",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "customernumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "registration",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "acountno",
+          "type": "address"
+        },
+        {
+          "internalType": "enum Kyc.customertype",
+          "name": "customertcategory",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "customerno",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum Kyc.customertype",
+          "name": "_category",
+          "type": "uint8"
+        }
+      ],
+      "name": "signup",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.1+commit.e6f7d5a4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"customernumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"registration\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"acountno\",\"type\":\"address\"},{\"internalType\":\"enum Kyc.customertype\",\"name\":\"customertcategory\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"customerno\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum Kyc.customertype\",\"name\":\"_category\",\"type\":\"uint8\"}],\"name\":\"signup\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/vimal/Project clone/ced-b4-g01/contracts/Kyc.sol\":\"Kyc\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/vimal/Project clone/ced-b4-g01/contracts/Kyc.sol\":{\"keccak256\":\"0xb8015bedc6299d1f816f758a0c6752a4aa65050b96278a74648c6ca61ce534d8\",\"urls\":[\"bzz-raw://c6b543cb0c83c343d213399be16d8a093305cddd37320cfc25508bb3d53cfd01\",\"dweb:/ipfs/QmNmrJDk74y6wuMy9apAzuFhX2EieyFQw42fSdxwKeyjTX\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610309806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80630840605a146100465780632bb6341d146100e6578063fd061fb414610104575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610135565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018360018111156100ca57fe5b60ff168152602001828152602001935050505060405180910390f35b6100ee61018c565b6040518082815260200191505060405180910390f35b6101336004803603602081101561011a57600080fd5b81019080803560ff169060200190929190505050610192565b005b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060000160149054906101000a900460ff16908060010154905083565b60005481565b600080815480929190600101919050555033600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160146101000a81548160ff0219169083600181111561028257fe5b0217905550600054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055505056fea264697066735822122019fa6a9040e8c54f7f08e15fee758e01b23d032b172d2183588ac6f692f93ebe64736f6c63430006010033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80630840605a146100465780632bb6341d146100e6578063fd061fb414610104575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610135565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018360018111156100ca57fe5b60ff168152602001828152602001935050505060405180910390f35b6100ee61018c565b6040518082815260200191505060405180910390f35b6101336004803603602081101561011a57600080fd5b81019080803560ff169060200190929190505050610192565b005b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060000160149054906101000a900460ff16908060010154905083565b60005481565b600080815480929190600101919050555033600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160146101000a81548160ff0219169083600181111561028257fe5b0217905550600054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055505056fea264697066735822122019fa6a9040e8c54f7f08e15fee758e01b23d032b172d2183588ac6f692f93ebe64736f6c63430006010033",
+  "sourceMap": "57:975:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:975:0;;;;;;;",
+  "deployedSourceMap": "57:975:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:975:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;457:48;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;457:48:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;160:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;550:469;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;550:469:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;457:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;160:26::-;;;;:::o;550:469::-;653:14;;:16;;;;;;;;;;;;;767:10;733:12;:24;746:10;733:24;;;;;;;;;;;;;;;:33;;;:44;;;;;;;;;;;;;;;;;;886:9;843:12;:24;856:10;843:24;;;;;;;;;;;;;;;:42;;;:52;;;;;;;;;;;;;;;;;;;;;;;;993:14;;957:12;:24;970:10;957:24;;;;;;;;;;;;;;;:35;;:50;;;;550:469;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\ncontract Kyc{\n  //For customer category\n  enum customertype{Individual,Industry}\n  //customer number\n  uint public customernumber;\n  struct regcustomer\n  {\n    \n    //address of customer\n        address acountno; \n    // customer category\n        customertype customertcategory;\n    //  customer number\n        uint customerno;\n  }\n  \n  // For storing address of customer with registration number\n   mapping(address=>regcustomer)public registration; \n  \n\n   //Function for Customer Signup\n    function signup(customertype _category)public\n        {\n          //increments customer no\n            customernumber++;\n          \n          //stores address of customer\n            registration[msg.sender].acountno=msg.sender;\n          \n          //stores category of customer \n            registration[msg.sender].customertcategory=_category;\n            \n          //stores Customer Number\n            registration[msg.sender].customerno=customernumber;\n\n        }\n    \n\n     }",
+  "sourcePath": "/home/vimal/Project clone/ced-b4-g01/contracts/Kyc.sol",
+  "ast": {
+    "absolutePath": "/home/vimal/Project clone/ced-b4-g01/contracts/Kyc.sol",
+    "exportedSymbols": {
+      "Kyc": [
+        52
+      ]
+    },
+    "id": 53,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 52,
+        "linearizedBaseContracts": [
+          52
+        ],
+        "name": "Kyc",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Kyc.customertype",
+            "id": 4,
+            "members": [
+              {
+                "id": 2,
+                "name": "Individual",
+                "nodeType": "EnumValue",
+                "src": "117:10:0"
+              },
+              {
+                "id": 3,
+                "name": "Industry",
+                "nodeType": "EnumValue",
+                "src": "128:8:0"
+              }
+            ],
+            "name": "customertype",
+            "nodeType": "EnumDefinition",
+            "src": "99:38:0"
+          },
+          {
+            "constant": false,
+            "functionSelector": "2bb6341d",
+            "id": 6,
+            "name": "customernumber",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 52,
+            "src": "160:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Kyc.regcustomer",
+            "id": 13,
+            "members": [
+              {
+                "constant": false,
+                "id": 8,
+                "name": "acountno",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 13,
+                "src": "252:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "252:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "customertcategory",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 13,
+                "src": "304:30:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_customertype_$4",
+                  "typeString": "enum Kyc.customertype"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 9,
+                  "name": "customertype",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 4,
+                  "src": "304:12:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_customertype_$4",
+                    "typeString": "enum Kyc.customertype"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "customerno",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 13,
+                "src": "368:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "368:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "regcustomer",
+            "nodeType": "StructDefinition",
+            "scope": 52,
+            "src": "190:198:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "0840605a",
+            "id": 17,
+            "name": "registration",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 52,
+            "src": "457:48:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+              "typeString": "mapping(address => struct Kyc.regcustomer)"
+            },
+            "typeName": {
+              "id": 16,
+              "keyType": {
+                "id": 14,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "465:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "457:29:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                "typeString": "mapping(address => struct Kyc.regcustomer)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 15,
+                "name": "regcustomer",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 13,
+                "src": "474:11:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_regcustomer_$13_storage_ptr",
+                  "typeString": "struct Kyc.regcustomer"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 50,
+              "nodeType": "Block",
+              "src": "604:415:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 23,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "653:16:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 22,
+                      "name": "customernumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "653:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 24,
+                  "nodeType": "ExpressionStatement",
+                  "src": "653:16:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 25,
+                          "name": "registration",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "733:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                            "typeString": "mapping(address => struct Kyc.regcustomer storage ref)"
+                          }
+                        },
+                        "id": 28,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 26,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2077,
+                            "src": "746:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 27,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "746:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "733:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_regcustomer_$13_storage",
+                          "typeString": "struct Kyc.regcustomer storage ref"
+                        }
+                      },
+                      "id": 29,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "acountno",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 8,
+                      "src": "733:33:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 30,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2077,
+                        "src": "767:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "767:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "733:44:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 33,
+                  "nodeType": "ExpressionStatement",
+                  "src": "733:44:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 40,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 34,
+                          "name": "registration",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "843:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                            "typeString": "mapping(address => struct Kyc.regcustomer storage ref)"
+                          }
+                        },
+                        "id": 37,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 35,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2077,
+                            "src": "856:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 36,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "856:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "843:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_regcustomer_$13_storage",
+                          "typeString": "struct Kyc.regcustomer storage ref"
+                        }
+                      },
+                      "id": 38,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "customertcategory",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "843:42:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_customertype_$4",
+                        "typeString": "enum Kyc.customertype"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 39,
+                      "name": "_category",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19,
+                      "src": "886:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_customertype_$4",
+                        "typeString": "enum Kyc.customertype"
+                      }
+                    },
+                    "src": "843:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_customertype_$4",
+                      "typeString": "enum Kyc.customertype"
+                    }
+                  },
+                  "id": 41,
+                  "nodeType": "ExpressionStatement",
+                  "src": "843:52:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 48,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 42,
+                          "name": "registration",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "957:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                            "typeString": "mapping(address => struct Kyc.regcustomer storage ref)"
+                          }
+                        },
+                        "id": 45,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 43,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2077,
+                            "src": "970:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 44,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "970:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "957:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_regcustomer_$13_storage",
+                          "typeString": "struct Kyc.regcustomer storage ref"
+                        }
+                      },
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "customerno",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 12,
+                      "src": "957:35:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 47,
+                      "name": "customernumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "993:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "957:50:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 49,
+                  "nodeType": "ExpressionStatement",
+                  "src": "957:50:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "fd061fb4",
+            "id": 51,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "signup",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19,
+                  "name": "_category",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 51,
+                  "src": "566:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_customertype_$4",
+                    "typeString": "enum Kyc.customertype"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 18,
+                    "name": "customertype",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4,
+                    "src": "566:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_customertype_$4",
+                      "typeString": "enum Kyc.customertype"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "565:24:0"
+            },
+            "returnParameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "604:0:0"
+            },
+            "scope": 52,
+            "src": "550:469:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 53,
+        "src": "57:975:0"
+      }
+    ],
+    "src": "32:1000:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/vimal/Project clone/ced-b4-g01/contracts/Kyc.sol",
+    "exportedSymbols": {
+      "Kyc": [
+        52
+      ]
+    },
+    "id": 53,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 52,
+        "linearizedBaseContracts": [
+          52
+        ],
+        "name": "Kyc",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Kyc.customertype",
+            "id": 4,
+            "members": [
+              {
+                "id": 2,
+                "name": "Individual",
+                "nodeType": "EnumValue",
+                "src": "117:10:0"
+              },
+              {
+                "id": 3,
+                "name": "Industry",
+                "nodeType": "EnumValue",
+                "src": "128:8:0"
+              }
+            ],
+            "name": "customertype",
+            "nodeType": "EnumDefinition",
+            "src": "99:38:0"
+          },
+          {
+            "constant": false,
+            "functionSelector": "2bb6341d",
+            "id": 6,
+            "name": "customernumber",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 52,
+            "src": "160:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Kyc.regcustomer",
+            "id": 13,
+            "members": [
+              {
+                "constant": false,
+                "id": 8,
+                "name": "acountno",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 13,
+                "src": "252:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "252:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "customertcategory",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 13,
+                "src": "304:30:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_customertype_$4",
+                  "typeString": "enum Kyc.customertype"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 9,
+                  "name": "customertype",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 4,
+                  "src": "304:12:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_customertype_$4",
+                    "typeString": "enum Kyc.customertype"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "customerno",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 13,
+                "src": "368:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "368:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "regcustomer",
+            "nodeType": "StructDefinition",
+            "scope": 52,
+            "src": "190:198:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "0840605a",
+            "id": 17,
+            "name": "registration",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 52,
+            "src": "457:48:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+              "typeString": "mapping(address => struct Kyc.regcustomer)"
+            },
+            "typeName": {
+              "id": 16,
+              "keyType": {
+                "id": 14,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "465:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "457:29:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                "typeString": "mapping(address => struct Kyc.regcustomer)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 15,
+                "name": "regcustomer",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 13,
+                "src": "474:11:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_regcustomer_$13_storage_ptr",
+                  "typeString": "struct Kyc.regcustomer"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 50,
+              "nodeType": "Block",
+              "src": "604:415:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 23,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "653:16:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 22,
+                      "name": "customernumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "653:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 24,
+                  "nodeType": "ExpressionStatement",
+                  "src": "653:16:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 25,
+                          "name": "registration",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "733:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                            "typeString": "mapping(address => struct Kyc.regcustomer storage ref)"
+                          }
+                        },
+                        "id": 28,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 26,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2077,
+                            "src": "746:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 27,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "746:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "733:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_regcustomer_$13_storage",
+                          "typeString": "struct Kyc.regcustomer storage ref"
+                        }
+                      },
+                      "id": 29,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "acountno",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 8,
+                      "src": "733:33:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 30,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2077,
+                        "src": "767:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "767:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "733:44:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 33,
+                  "nodeType": "ExpressionStatement",
+                  "src": "733:44:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 40,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 34,
+                          "name": "registration",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "843:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                            "typeString": "mapping(address => struct Kyc.regcustomer storage ref)"
+                          }
+                        },
+                        "id": 37,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 35,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2077,
+                            "src": "856:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 36,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "856:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "843:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_regcustomer_$13_storage",
+                          "typeString": "struct Kyc.regcustomer storage ref"
+                        }
+                      },
+                      "id": 38,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "customertcategory",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "843:42:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_customertype_$4",
+                        "typeString": "enum Kyc.customertype"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 39,
+                      "name": "_category",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19,
+                      "src": "886:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_customertype_$4",
+                        "typeString": "enum Kyc.customertype"
+                      }
+                    },
+                    "src": "843:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_customertype_$4",
+                      "typeString": "enum Kyc.customertype"
+                    }
+                  },
+                  "id": 41,
+                  "nodeType": "ExpressionStatement",
+                  "src": "843:52:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 48,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 42,
+                          "name": "registration",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "957:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_regcustomer_$13_storage_$",
+                            "typeString": "mapping(address => struct Kyc.regcustomer storage ref)"
+                          }
+                        },
+                        "id": 45,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 43,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2077,
+                            "src": "970:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 44,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "970:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "957:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_regcustomer_$13_storage",
+                          "typeString": "struct Kyc.regcustomer storage ref"
+                        }
+                      },
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "customerno",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 12,
+                      "src": "957:35:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 47,
+                      "name": "customernumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "993:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "957:50:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 49,
+                  "nodeType": "ExpressionStatement",
+                  "src": "957:50:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "fd061fb4",
+            "id": 51,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "signup",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19,
+                  "name": "_category",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 51,
+                  "src": "566:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_customertype_$4",
+                    "typeString": "enum Kyc.customertype"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 18,
+                    "name": "customertype",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4,
+                    "src": "566:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_customertype_$4",
+                      "typeString": "enum Kyc.customertype"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "565:24:0"
+            },
+            "returnParameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "604:0:0"
+            },
+            "scope": 52,
+            "src": "550:469:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 53,
+        "src": "57:975:0"
+      }
+    ],
+    "src": "32:1000:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.1+commit.e6f7d5a4.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xE8F68B8191dA16B392595afF24aF3d86039C236D",
+      "transactionHash": "0xd0602abfab5d7defda38f7f0392d477f52a63a6ffb86d90609635eb9576d19e9"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x74E10814B12AaD930a8CCdE1c41b3bEa216F3192",
+      "transactionHash": "0x70618bd9ad7d444c51be441d69a123d21937bcc87cb4897d715dbffa607e4653"
+    },
+    "7877": {
+      "events": {},
+      "links": {},
+      "address": "0x5f8D3A69CC4fc0400F9daB776179aD855B9FBF19",
+      "transactionHash": "0xe9d9a9adbe9bcca76c52960a7fe8860bfc131601b09d9a69b5e9cc94780d5f3c"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-08-08T14:19:12.600Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
