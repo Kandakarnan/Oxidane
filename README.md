@@ -1,5 +1,15 @@
 # OXIDANE
 
+## WATER TRADING DAPP FOR PUBLIC
+
+
+Oxidane is a decentralized application for water trading, it mainly
+focuses on truck-based water delivery system. Oxidane eliminates the role of
+middle man between Water-exchange and customers and makes the system
+more transparent and trustable.
+
+For more details Please read documentation file.
+
 #  SETTING UP- START  :
 
 **Step 1:** Download the repostory using the command:  
